@@ -1,0 +1,36 @@
+footer {
+  padding: 10px;
+  background-color: #73c7b9;
+  color: white;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+a:hover {
+  color: #a7a7a7;
+}
+
+p {
+  padding: 5px;
+}
+
+@media (min-width: 600px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+ p {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}

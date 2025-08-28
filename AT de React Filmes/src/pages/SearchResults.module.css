@@ -1,0 +1,29 @@
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.resultItem {
+  text-align: center;
+}
+
+.resultItem p {
+  color: black;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.resultImage {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.noResults {
+  text-align: center;
+  color: #555;
+  font-size: 18px;
+  margin-top: 20px;
+}

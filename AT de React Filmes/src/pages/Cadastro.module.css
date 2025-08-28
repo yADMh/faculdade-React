@@ -1,0 +1,117 @@
+.cadastroContainer {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f1f1f1;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.cadastroForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+}
+
+label {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+}
+
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.cadastroButton {
+  background-color: #73c7b9;
+  color: rgb(255, 255, 255);
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.backButton {
+  background-color: rgb(46, 46, 46);
+  color: white;
+  padding: 10px;
+  width: 100%;
+}
+
+input[type="email"] {
+  padding: 10px;
+  border: 2px solid #ffffff;
+  font-size: 16px;
+  transition: color 0.3s ease, background-color 0.3s ease,
+    border-color 0.3s ease;
+  margin-top: 10px;
+}
+
+input[type="email"]:focus {
+  border-color: #585858;
+  outline: none;
+}
+
+input[type="email"]::placeholder {
+  color: #aaaaaa;
+  opacity: 1;
+}
+
+input[type="email"]:hover {
+  color: #fafafa;
+  background-color: #585858;
+}
+
+input[type="password"] {
+  padding: 10px;
+  border: 2px solid #ffffff;
+  font-size: 16px;
+  transition: color 0.3s ease, background-color 0.3s ease,
+    border-color 0.3s ease;
+  margin-top: 10px;
+}
+
+input[type="password"]:focus {
+  border-color: #585858;
+  outline: none;
+}
+
+input[type="password"]::placeholder {
+  color: #aaaaaa;
+  opacity: 1;
+}
+
+input[type="password"]:hover {
+  color: #fafafa;
+  background-color: #585858;
+}
+
+@media (max-width: 480px) {
+  .cadastroContainer {
+    padding: 10px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}

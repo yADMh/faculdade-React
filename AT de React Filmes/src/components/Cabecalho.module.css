@@ -1,0 +1,159 @@
+.header {
+  display: flex;
+  flex-direction: column; /* Mobile-first */
+  padding: 10px;
+  background-color: #73c7b9;
+  color: white;
+}
+
+.logo {
+  margin-bottom: 10px;
+}
+
+.trocarMenu {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  display: block;
+}
+
+nav {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background-color: #585858;
+}
+
+.navAberta {
+  max-height: 300px;
+}
+
+.navFechada {
+  max-height: 0;
+}
+
+.acoes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  padding: 5px 10px;
+}
+
+a:hover {
+  color: #a7a7a7;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin-top: 10px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 2px solid #ffffff;
+  font-size: 16px;
+  transition: color 0.3s ease, background-color 0.3s ease,
+    border-color 0.3s ease;
+  margin-top: 10px;
+}
+
+input[type="text"]:focus {
+  border-color: #585858;
+  outline: none;
+}
+
+input[type="text"]::placeholder {
+  color: #aaaaaa;
+  opacity: 1;
+}
+
+input[type="text"]:hover {
+  color: #fafafa;
+  background-color: #585858;
+}
+
+button {
+  padding: 10px;
+  border: 2px solid #ffffff;
+  font-size: 16px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  color: #ffffff;
+  background-color: #585858;
+}
+
+@media (min-width: 600px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  h1 {
+    text-align: left;
+  }
+
+  ul {
+    display: block;
+  }
+
+  li {
+    margin-top: 0px;
+  }
+
+  .trocarMenu {
+    display: none;
+  }
+
+  nav {
+    overflow: hidden;
+  }
+
+  .navAberta {
+    max-height: 300px;
+    margin-top: -1000px;
+  }
+
+  .telaGrande {
+    overflow: visible;
+  }
+
+  .telaGrande {
+    display: flex;
+  }
+
+  .telaGrande ul {
+    margin-top: -10px;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 0;
+  }
+
+  .telaGrande ul li {
+    margin-bottom: 0;
+  }
+
+  .acoes {
+    flex-direction: row;
+    gap: 10px;
+    margin-top: -10px;
+  }
+}

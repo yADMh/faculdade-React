@@ -1,0 +1,49 @@
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.autorItem {
+  text-align: center;
+}
+
+.autorItem p {
+  color: black;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.imagemAutor {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.navAutores {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+.setaNav {
+  background-color: #73c7b9;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.setaNav:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.setaNav:hover {
+  background-color: #4a8e7c;
+}

@@ -1,0 +1,88 @@
+.loginContainer {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+}
+
+label {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.loginButton {
+  background-color: #73c7b9;
+  color: rgb(255, 255, 255);
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 400px;
+}
+
+.backButton,
+.signupButton {
+  background-color: rgb(46, 46, 46);
+  color: white;
+  padding: 10px;
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.signupButton {
+  background-color: #73c7b9;
+}
+
+.backButton:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 480px) {
+  .loginContainer {
+    padding: 10px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .backButton,
+  .signupButton {
+    margin-bottom: 10px;
+  }
+}
